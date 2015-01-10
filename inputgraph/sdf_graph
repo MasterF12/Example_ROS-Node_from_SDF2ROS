@@ -1,0 +1,21 @@
+[graph] {a1;1} = A1 ( {in_A;1} );
+[graph] {b1;1} = B1 ( {in_B;1} );
+[graph] {c1;1} = C1 ( {in_C;2} );
+
+[graph] {a2;1} = A2 ( {a1;2} );
+[graph] {b2;1} = B2 ( {b1;1} );
+[graph] {c2;1} = C2 ( {c1;1} );
+
+[graph] {a3;1} = A3 ( {a2;1} );
+[graph] {b3;1} = B3 ( {b2;1} );
+[graph] {c3;1} = C3 ( {c2;1} );
+
+[graph] {a4;1} = A4 ( {a3;1} );
+[graph] {b4;1} = B4 ( {b3;2} );
+[graph] {c4;1} = C4 ( {c3;1} );
+
+[graph] {out;1} = M ( {a4;1}, {b4;1}, {c4;1} );
+
+[freq] in_A = 100 hz;
+[freq] in_B = 100 hz;
+[freq] in_C = 100 hz;
